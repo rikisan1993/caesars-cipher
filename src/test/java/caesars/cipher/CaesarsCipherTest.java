@@ -1,12 +1,12 @@
 package caesars.cipher;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class CaesarsCipherTest {
-
-private CaesarsCipher caesarsCipher = new CaesarsCipher();
+public class CaesarsCipherTest {
+	
+	private CaesarsCipher caesarsCipher = new CaesarsCipher();
 	
 	@Test
 	public void testCipheredMessageWithOffsetOf12() {
@@ -14,7 +14,8 @@ private CaesarsCipher caesarsCipher = new CaesarsCipher();
 	}
 	
 	@Test
-	void testEmptyString() {
+	public void testEmptyString() {
 		assertEquals("", caesarsCipher.cipher("", 12));
 	}
+
 }
